@@ -1,11 +1,11 @@
 <?php
 
-namespace Alltube\Library\Exception;
+namespace Ytd\Library\Exception;
 
 /**
  * Invalid time.
  */
-class InvalidTimeException extends AlltubeLibraryException
+class InvalidTimeException extends YtdLibraryException
 {
 
     /**

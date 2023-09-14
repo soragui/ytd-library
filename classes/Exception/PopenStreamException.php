@@ -1,11 +1,11 @@
 <?php
 
-namespace Alltube\Library\Exception;
+namespace Ytd\Library\Exception;
 
 /**
  * Could not open popen stream.
  */
-class PopenStreamException extends AlltubeLibraryException
+class PopenStreamException extends YtdLibraryException
 {
     /**
      * Error message.

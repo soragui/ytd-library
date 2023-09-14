@@ -1,11 +1,11 @@
 <?php
 
-namespace Alltube\Library\Exception;
+namespace Ytd\Library\Exception;
 
 /**
  * Invalid conversion.
  */
-class InvalidProtocolConversionException extends AlltubeLibraryException
+class InvalidProtocolConversionException extends YtdLibraryException
 {
     /**
      * InvalidProtocolConversionException constructor.

@@ -1,11 +1,11 @@
 <?php
 
-namespace Alltube\Library\Exception;
+namespace Ytd\Library\Exception;
 
 /**
  * Can't find avconv or ffmpeg.
  */
-class AvconvException extends AlltubeLibraryException
+class AvconvException extends YtdLibraryException
 {
     /**
      * AvconvException constructor.

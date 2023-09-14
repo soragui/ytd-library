@@ -1,11 +1,11 @@
 <?php
 
-namespace Alltube\Library\Exception;
+namespace Ytd\Library\Exception;
 
 /**
  * Wrong password.
  */
-class WrongPasswordException extends AlltubeLibraryException
+class WrongPasswordException extends YtdLibraryException
 {
     /**
      * Error message.

@@ -1,10 +1,10 @@
 <?php
 
-namespace Alltube\Library\Exception;
+namespace Ytd\Library\Exception;
 
 /**
  * Generic remux exception.
  */
-class RemuxException extends AlltubeLibraryException
+class RemuxException extends YtdLibraryException
 {
 }

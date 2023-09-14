@@ -1,13 +1,13 @@
 <?php
 
-namespace Alltube\Library\Exception;
+namespace Ytd\Library\Exception;
 
 use Symfony\Component\Process\Process;
 
 /**
  * Generic youtube-dl error.
  */
-class YoutubedlException extends AlltubeLibraryException
+class YoutubedlException extends YtdLibraryException
 {
     /**
      * YoutubedlException constructor.
