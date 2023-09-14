@@ -1,18 +1,18 @@
 <?php
 
-namespace Alltube\Library;
+namespace Ytd\Library;
 
-use Alltube\Library\Exception\AlltubeLibraryException;
-use Alltube\Library\Exception\AvconvException;
-use Alltube\Library\Exception\EmptyUrlException;
-use Alltube\Library\Exception\InvalidProtocolConversionException;
-use Alltube\Library\Exception\InvalidTimeException;
-use Alltube\Library\Exception\PasswordException;
-use Alltube\Library\Exception\PlaylistConversionException;
-use Alltube\Library\Exception\PopenStreamException;
-use Alltube\Library\Exception\RemuxException;
-use Alltube\Library\Exception\WrongPasswordException;
-use Alltube\Library\Exception\YoutubedlException;
+use Ytd\Library\Exception\YtdLibraryException;
+use Ytd\Library\Exception\AvconvException;
+use Ytd\Library\Exception\EmptyUrlException;
+use Ytd\Library\Exception\InvalidProtocolConversionException;
+use Ytd\Library\Exception\InvalidTimeException;
+use Ytd\Library\Exception\PasswordException;
+use Ytd\Library\Exception\PlaylistConversionException;
+use Ytd\Library\Exception\PopenStreamException;
+use Ytd\Library\Exception\RemuxException;
+use Ytd\Library\Exception\WrongPasswordException;
+use Ytd\Library\Exception\YoutubedlException;
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerAwareInterface;
@@ -262,7 +262,7 @@ class Downloader implements LoggerAwareInterface
      *
      * @param Video $video Video object
      * @return resource popen stream
-     * @throws AlltubeLibraryException
+     * @throws YtdLibraryException
      * @throws AvconvException If avconv/ffmpeg is missing
      * @throws PopenStreamException If the popen stream was not created correctly
      */
@@ -327,7 +327,7 @@ class Downloader implements LoggerAwareInterface
      *
      * @param Video $video Video object
      * @return resource popen stream
-     * @throws AlltubeLibraryException
+     * @throws YtdLibraryException
      * @throws PopenStreamException If the popen stream was not created correctly
      * @throws RemuxException If the video does not have two URLs
      */
@@ -367,7 +367,7 @@ class Downloader implements LoggerAwareInterface
      *
      * @param Video $video Video object
      * @return resource popen stream
-     * @throws AlltubeLibraryException
+     * @throws YtdLibraryException
      * @throws PopenStreamException If the popen stream was not created correctly
      */
     public function getRtmpStream(Video $video)
@@ -454,7 +454,7 @@ class Downloader implements LoggerAwareInterface
      *
      * @return string[] Extractors
      *
-     * @throws AlltubeLibraryException
+     * @throws YtdLibraryException
      */
     public function getExtractors(): array
     {
@@ -469,7 +469,7 @@ class Downloader implements LoggerAwareInterface
      * @param mixed[] $headers HTTP headers of the request
      *
      * @return ResponseInterface
-     * @throws AlltubeLibraryException
+     * @throws YtdLibraryException
      */
     public function getHttpResponse(Video $video, array $headers = []): ResponseInterface
     {

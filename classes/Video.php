@@ -4,12 +4,12 @@
  * Video class.
  */
 
-namespace Alltube\Library;
+namespace Ytd\Library;
 
-use Alltube\Library\Exception\EmptyUrlException;
-use Alltube\Library\Exception\PasswordException;
-use Alltube\Library\Exception\WrongPasswordException;
-use Alltube\Library\Exception\YoutubedlException;
+use Ytd\Library\Exception\EmptyUrlException;
+use Ytd\Library\Exception\PasswordException;
+use Ytd\Library\Exception\WrongPasswordException;
+use Ytd\Library\Exception\YoutubedlException;
 use stdClass;
 
 /**

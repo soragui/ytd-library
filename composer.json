@@ -1,8 +1,8 @@
 {
-  "name": "rudloff/alltube-library",
+  "name": "soragui/ytd-library",
   "description": "PHP wrapper for youtube-dl",
   "license": "GPL-3.0-only",
-  "homepage": "http://alltubedownload.net/",
+  "homepage": "http://soragui.com/",
   "require": {
     "ext-json": "*",
     "guzzlehttp/guzzle": "^6.5",
@@ -20,6 +20,9 @@
     "sort-packages": true,
     "platform": {
       "php": "7.3.11"
+    },
+    "allow-plugins": {
+      "phpro/grumphp": true
     }
   },
   "scripts": {
@@ -27,7 +30,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Alltube\\Library\\": "classes/"
+      "Ytd\\Library\\": "classes/"
     }
   }
 }
