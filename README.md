@@ -23,6 +23,3 @@ $downloader = new Downloader('/usr/local/bin/youtube-dl');
 $video = $downloader->getVideo('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 $video->getUrl();
 ```
-
-You can also have a look at
-this [example project](https://github.com/Rudloff/alltube-example-project).
